@@ -7,14 +7,14 @@ const images = [
 
 let i = 0;
 
-function rotateHero() {
+function changeHero() {
     const hero = document.querySelector(".hero-slider");
 
     hero.style.backgroundImage =
-        `linear-gradient(rgba(5,10,20,0.75), rgba(5,10,20,0.75)), url('${images[i]}')`;
+        `linear-gradient(rgba(0,30,60,0.25), rgba(0,30,60,0.25)), url('${images[i]}')`;
 
     i = (i + 1) % images.length;
 }
 
-rotateHero();
-setInterval(rotateHero, 3500);
+changeHero();
+setInterval(changeHero, 3000);
